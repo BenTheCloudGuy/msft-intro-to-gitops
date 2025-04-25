@@ -74,29 +74,3 @@ If you prefer to use the `.devcontainer` locally:
 4. Reopen the repository in the container by clicking Reopen in Container in the Command Palette (Ctrl+Shift+P).
 
 
----
-
-## Repository Structure
-
-```plaintext
-.
-├── LAB01/                  # Git Basics
-│   ├── [LAB01.md](http://_vscodecontentref_/0)            # Lab guide for Git basics
-│   └── [LABGUIDE.md](http://_vscodecontentref_/1)         # Overview of LAB01
-├── LAB02/                  # Docker Basics
-│   ├── [LAB02.md](http://_vscodecontentref_/2)            # Lab guide for Docker image creation and management
-│   └── [LABGUIDE.md](http://_vscodecontentref_/3)         # Overview of LAB02
-├── LAB03/                  # Terraform Basics
-│   ├── [LAB03.md](http://_vscodecontentref_/4)            # Lab guide for Terraform infrastructure deployment
-│   └── [LABGUIDE.md](http://_vscodecontentref_/5)         # Overview of LAB03
-├── LAB04/                  # Ansible Basics
-│   ├── [LAB01.md](http://_vscodecontentref_/6)            # Ansible setup and usage
-│   ├── [LAB02.md](http://_vscodecontentref_/7)            # Ansible role creation and execution
-│   └── [LABGUIDE.md](http://_vscodecontentref_/8)         # Overview of LAB04
-├── infra/                  # Infrastructure as Code
-│   ├── ansible/            # Ansible playbooks and roles
-│   └── terraform/          # Terraform configuration files
-├── src/                    # Source code for the Web API
-│   ├── package.json        # Node.js dependencies
-│   └── server.js           # Web API server code
-└── [README.md](http://_vscodecontentref_/9)               # Repository documentation

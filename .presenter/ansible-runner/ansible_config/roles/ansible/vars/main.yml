@@ -1,0 +1,3 @@
+---
+# Default variables for the Ansible role
+ansible_version: latest

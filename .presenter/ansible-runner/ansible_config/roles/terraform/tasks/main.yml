@@ -1,0 +1,29 @@
+---
+- name: Ensure unzip is installed
+  apt:
+    name: unzip
+    state: present
+    update_cache: yes
+  become: yes
+
+- name: Download Terraform
+  get_url:
+    url: "{{ terraform_download_url }}"
+    dest: "/tmp/{{ terraform_archive }}"
+    mode: '0644'
+
+- name: Extract Terraform binary
+  unarchive:
+    src: "/tmp/{{ terraform_archive }}"
+    dest: "/usr/local/bin/"
+    remote_src: yes
+  become: yes
+
+- name: Verify Terraform installation
+  command: "terraform --version"
+  register: terraform_version
+  changed_when: false
+
+- name: Debug Terraform version
+  debug:
+    msg: "Terraform version installed: {{ terraform_version.stdout }}"
