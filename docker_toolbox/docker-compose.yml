@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  devops-container:
+    image: benthebuilder/devops-container:1.0.0
+    container_name: devops-container
+    volumes:
+      - .:/home/app
+      - ~/.ssh:/home/.ssh:ro
+    working_dir: /home/app
+    tty: true
