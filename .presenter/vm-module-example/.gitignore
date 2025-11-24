@@ -1,0 +1,41 @@
+# Terraform Files
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Sensitive Files
+*.tfvars
+!terraform.tfvars.example
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets and Credentials
+.env
+.env.*
+secrets/
+*.pem
+*.key
+*.pfx
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Azure
+.azure/
+
+# Documentation Build Artifacts
+.docusaurus/
+build/
+node_modules/
